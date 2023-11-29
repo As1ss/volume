@@ -10,3 +10,4 @@ class owner(models.Model):
     name = fields.Char(string = "Nombre", required = "True")
     surname = fields.Char(string = "Apellidos", required = "True")
     phone = fields.Integer(string = "Teléfono", required = "True")
+    housephone = fields.Char(string = "Teléfono Casa",required="False")
