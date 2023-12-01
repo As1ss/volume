@@ -1,13 +1,13 @@
-from odoo import models, fields
+from odoo import models, fields,api
 
 
 class cliente(models.Model):
     _name="taller.cliente"
-    _description="taller.cliente"
+    _description="Cliente"
 
-    nombre = fields.Char("Nombre",required=True)
-    apellidos = fields.Char("Apellidos",required=True)
-    DNI = fields.Char("DNI",required=True)
-    telefono = fields.Char("Teléfono",required=True)
-    email =fields.Char("Email",required=False)
+    nombre = fields.Char(string="Nombre",required=True)
+    apellidos = fields.Char(string="Apellidos",required=True)
+    NIF = fields.Char(string="NIF",required=True)
+    telefono = fields.Char(string="Teléfono",required=True)
+    email =fields.Char(string="Email",required=False)
     
