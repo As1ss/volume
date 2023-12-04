@@ -1,0 +1,32 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="taller_marca_list">
+      <field name="name">taller.marca.list</field>
+      <field name="model">taller.marca</field>
+      <field name="arch" type="xml">
+        <tree name="MarcaAa">
+          <field name="nombre"/>
+        </tree>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="taller_marca_form">
+      <field name="name">taller.marca.form</field>
+      <field name="model">taller.marca</field>
+      <field name="arch" type="xml">
+        <form string="Marcaaa">
+          <sheet>
+          <group name="group_top">
+            <group name="group_left">
+              <field name="nombre"/>
+            </group>
+            <group name="group_right">
+              <field name="logo"/>
+            </group>
+          </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>
